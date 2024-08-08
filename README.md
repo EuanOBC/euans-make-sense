@@ -4,13 +4,16 @@
 [![Gitter](https://badges.aleen42.com/src/gitter.svg)](https://gitter.im/make-sense-ai/community)
 [![Discord](https://badges.aleen42.com/src/discord.svg)](https://discord.gg/ASCjCrNdA7)
 
-<h1 align="center">makesense.ai</h1>
+<h1 align="center">EUANS makesense.ai</h1>
 
 <p align="center">
     </br>
     <img width="100" src=".//public/favicon.png" alt="make sense logo">
     </br>
 </p>
+
+# Modifications:
+- Changed hotkeys for next image, and previous image to "f" and "d" respectively
 
 [makesense.ai][1] is a free-to-use online tool for labeling photos. Thanks to the use of a browser it does not require any complicated installation - just visit the website and you are ready to go. It also doesn't matter which operating system you're running on - we do our best to be truly cross-platform. It is perfect for small computer vision deep learning projects, making the process of preparing a dataset much easier and faster. Prepared labels can be downloaded in one of the multiple supported formats. The application was written in TypeScript and is based on React/Redux duo.
 
