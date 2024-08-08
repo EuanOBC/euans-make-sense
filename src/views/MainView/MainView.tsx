@@ -66,6 +66,28 @@ const MainView: React.FC = () => {
     });
   };
 
+  const getEditorFeatureTiles = () => {
+    return EditorFeatureData.map((data: IEditorFeature) => {
+      return <div
+        className='EditorFeaturesTiles'
+        key={data.displayText}
+      >
+        <div
+          className='EditorFeaturesTilesWrapper'
+        >
+          <img
+            draggable={false}
+            alt={data.imageAlt}
+            src={data.imageSrc}
+          />
+          <div className='EditorFeatureLabel'>
+            {data.displayText}
+          </div>
+        </div>
+      </div>;
+    });
+  };
+
   return (
     <div className={getClassName()}>
       <div className='Slider' id='lower'>
@@ -88,6 +110,9 @@ const MainView: React.FC = () => {
             src={'ico/main-image-color.png'}
           />
         </div>
+        <div className='EditorFeaturesWrapper'>
+          {getEditorFeatureTiles()}
+        </div>
         <div className='TriangleVertical'>
           <div className='TriangleVerticalContent' />
         </div>
@@ -99,6 +124,9 @@ const MainView: React.FC = () => {
       <div className='RightColumn'>
         <div />
         <ImagesDropZone />
+        <div className='SocialMediaWrapper'>
+          {getSocialMediaButtons({ width: 30, height: 30 })}
+        </div>
         {!projectInProgress && <TextButton
           label={'Get Started'}
           onClick={startProject}
