@@ -15,6 +15,7 @@
 # Modifications:
 - Changed hotkeys for next image, and previous image to "f" and "d"
 - Hide filename at the bottom of the editor window, replace it with image number.
+- TODO: Sort the label list alphabetically.
 
 # README:
 

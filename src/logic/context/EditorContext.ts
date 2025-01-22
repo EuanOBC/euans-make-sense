@@ -47,9 +47,21 @@ export class EditorContext extends BaseContext {
       }
     },
     {
+      keyCombo: PlatformUtil.isMac(window.navigator.userAgent) ? [","] : [","],
+      action: (event: KeyboardEvent) => {
+        ImageActions.getPreviousImage()
+      }
+    },
+    {
       keyCombo: PlatformUtil.isMac(window.navigator.userAgent) ? ["f"] : ["f"],
       action: (event: KeyboardEvent) => {
         ImageActions.getNextImage();
+      }
+    },
+    {
+      keyCombo: PlatformUtil.isMac(window.navigator.userAgent) ? ["."] : ["."],
+      action: (event: KeyboardEvent) => {
+        ImageActions.getNextImage()
       }
     },
     {
